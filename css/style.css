@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton&family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+*{
+  margin: 0px;
+  padding: 2px;
+  /* font-family: 'Neuton', serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --gray0: rgb(233, 233, 233);
+  --gray1: #dadada;
+  --gray2: #a9a9a9;
+  --gray3: #5c5c5c;
+  --gray4: #2f2f2f;
+  --platinum: #D8DBE2;
+  --powder-blue: #A9BCD0;
+  --moonstone: #58A4B0;
+  --charcoal: #373F51;
+  --eerie-black: #1B1B1E;
+}
+
+.light {
+  --bg: var(--platinum);
+  --text: var(--charcoal);
+  --nav-text: var(--moonstone);
+  --border-color: var(--moonstone);
+}
+
+.dark {
+  --bg: var(--charcoal);
+  --text: var(--platinum);
+  --nav-text: var(--moonstone);
+  --border-color: var(--moonstone);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.big-header{
+  width: 100%;
+}
+
+.full-width-text{
+  width: 100%;
+  text-align: center;
+  font-size: 12vw;
+  margin: 0px;
+}
+
+ul{
+  display: flex;
+  padding: 0px;
+}
+
+li{
+  margin-left: 50px;
+  padding: 0px;
+}
+
+.p-0{
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.col-1 {
+  width: 8.33333333%; /* 1 column out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-2 {
+  width: 16.66666667%; /* 2 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 25%; /* 3 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-4 {
+  width: 33.33333333%; /* 4 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-5 {
+  width: 41.66666667%; /* 5 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-6 {
+  width: 50%; /* 6 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-7 {
+  width: 58.33333333%; /* 7 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-8 {
+  width: 66.66666667%; /* 8 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-9 {
+  width: 75%; /* 9 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-10 {
+  width: 83.33333333%; /* 10 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-11 {
+  width: 91.66666667%; /* 11 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-12 {
+  width: 100%; /* 12 columns out of 12 */
+  float: left;
+  box-sizing: border-box;
+}
+
+.menu-toggle{
+  display: none;
+  cursor: pointer;
+  text-align: end;
+  padding: 0px 15px 0px 0px;
+  width: auto;
+}
+
+#nav{
+  display: block;
+  padding: 0px;
+}
+
+a{
+  padding: 0px;
+}
+
+.fs-0{
+  font-size: 12px;
+}
+
+.fs-1{
+  font-size: 15px;
+}
+
+.fs-2{
+  font-size: 20px;
+}
+
+.fs-3{
+  font-size: 30px;
+}
+
+.fs-4{
+  font-size: 40px;
+}
+
+.fs-5{
+  font-size: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  #nav {
+    display: none;
+  }
+  ul{
+    display: block;
+  }
+  li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  .menu-toggle{
+    display: block;
+  }
+}
+
+ul a{
+  text-decoration: none;
+  color: var(--nav-bg);
+  padding: 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--text);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--bg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: var(--text);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+  background-color: var(--bg);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.border {
+  border: 2px solid var(--text);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+p{
+  padding: 0;
+}
+
+br {
+  padding: 0;
+}
+
+div {
+  padding: 0;
+}
+
+card{
+  width: auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
