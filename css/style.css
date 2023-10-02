@@ -37,7 +37,12 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out, background-color 500ms ease-in-out;
+}
+
+.body-inverse {
+  background-color: var(--text);
+  color: var(--bg);
 }
 
 .big-header{
@@ -48,6 +53,27 @@ body {
   width: 100%;
   text-align: center;
   font-size: 12vw;
+  margin: 0px;
+}
+
+.full-width-text-projects{
+  width: 100%;
+  text-align: center;
+  font-size: 19.8vw;
+  margin: 0px;
+}
+
+.full-width-text-about{
+  width: 100%;
+  text-align: center;
+  font-size: 19.5vw;
+  margin: 0px;
+}
+
+.full-width-text-subhead-contacts{
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
   margin: 0px;
 }
 
@@ -63,6 +89,202 @@ li{
 
 .p-0{
   padding: 0px;
+}
+
+.p-1{
+  padding: 5px;
+}
+
+.p-2{
+  padding: 10px;
+}
+
+.p-3{
+  padding: 15px;
+}
+
+.p-4{
+  padding: 20px;
+}
+
+.p-5{
+  padding: 25px;
+}
+
+.p-6{
+  padding: 35px;
+}
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.px-1 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px-2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.px-4 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-5 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.px-6 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py-2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-5 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.py-6 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 5px;
+}
+
+.m-2 {
+  margin: 10px;
+}
+
+.m-3 {
+  margin: 15px;
+}
+
+.m-4 {
+  margin: 20px;
+}
+
+.m-5 {
+  margin: 25px;
+}
+
+.m-6 {
+  margin: 30px;
+}
+
+.m-7 {
+  margin: 35px;
+}
+
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mx-1 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mx-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mx-3 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mx-4 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mx-5 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.mx-6 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.my-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.my-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-5 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.my-6 {
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .container{
@@ -162,6 +384,11 @@ li{
 
 a{
   padding: 0px;
+}
+
+a button{
+  padding: 0px;
+  cursor: pointer;
 }
 
 .fs-0{
@@ -284,9 +511,30 @@ input:checked + .slider:before {
 
 .border {
   border: 2px solid var(--text);
-  padding: 20px;
   border-radius: 10px;
-  margin: 30px;
+}
+
+.border-large {
+  border-radius: 100px;
+  background-color: var(--bg);
+  overflow: hidden;
+  position: relative;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-25 {
+  height: 25%;
 }
 
 p{
@@ -301,8 +549,16 @@ div {
   padding: 0;
 }
 
-card{
+.card, .card-inverse{
   width: auto;
+  color: var(--text);
+  background-color: var(--bg);
+  border-radius: 10px;
+}
+
+.card-inverse{
+  color: var(--bg);
+  background-color: var(--text);
 }
 
 .d-flex{
@@ -315,4 +571,72 @@ card{
 
 .justify-content-center {
   justify-content: center;
+}
+
+.vertical-line {
+  width: 2px; /* Adjust the thickness of the line */
+  background-color: var(--text); /* Line color */
+  position: absolute;
+  left: 50%;
+  transform: translateY(-4.4%);
+  z-index: -1; /* Ensure the line appears on top of other elements */
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.btn-1 {
+  background-color: var(--text);
+  color: var(--bg);
+  width: 100%;
+  border: 0px;
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
+}
+
+.btn-2 {
+  background-color: var(--bg);
+  color: var(--text);
+  width: 100%;
+  border: 0px;
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
+}
+
+.card-services {
+  border-radius: 100px;
+}
+
+.border-dotted {
+  border: 2px dotted var(--text);
+  box-sizing: border-box;
+}
+
+.bg-platinum {
+  background-color: var(--platinum);
+  color: var(--charcoal);
+}
+
+.bg-moonshine {
+  background-color: var(--moonstone);
+  color: var(--bg);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--bg), var(--text));
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 45px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
