@@ -45,12 +45,19 @@ nav_btn = document.querySelectorAll('ul a')
 //   });
 // });
 
-nav_btn.forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+var currentFileName = window.location.pathname.split('/').pop();
 
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+// Check if the file name is "example.html"
+if (currentFileName === "index.html") {
+  nav_btn.forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
     });
   });
-});
+} else {
+  
+}

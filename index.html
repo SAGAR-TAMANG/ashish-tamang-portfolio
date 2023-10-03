@@ -10,26 +10,30 @@
 <body class="light">
   <header id="home">
     <div class="container">
-      <div class="col-6">
-          TAMANG GROUP
-      </div>
-      <div class="col-4">
-        <div class="p-0">
-          <span class="menu-toggle fs-1" onclick="toggleMenu()">☰</span></div>
-        <nav id="nav">
-          <ul type="circle">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col text-right">
-        <label class="switch" onclick="toggleTheme()">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
+      <div class="row">
+        <div class="col-6">
+          <span>TAMANG GROUP</span>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="p-0">
+            <span class="menu-toggle fs-1" onclick="toggleMenu()">☰</span></div>
+          <nav id="nav">
+            <ul type="circle">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-12">
+          <div class="d-flex justify-content-right">
+            <label class="switch" onclick="toggleTheme()">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
       </div>
     </div>
     <div class="big-header">
@@ -37,55 +41,61 @@
     </div>
   </header>
   <main>
-    <div class="border m-6 container fs-0 p-4">
-      <div class="col">
-        <div class="text-left">
-          <p>
-            I'm passinate about capturing the best moments of someone's life on camera.
-          </p>
-        </div>  
-      </div>
-      <div class="col d-flex justify-content-center fs-0" id="ashish-intro-middle">
-        <div class="vertical-line" id="vertical-line"></div>
-        <div class="card" style="width: 60%; padding: px; margin-top: 20px; margin-bottom: 20px;">
-            <img src="img/ashish6v2.jpg" style="border-radius: 10px;" alt="img" width="100%">
+    <div class="p-2">
+      <div class="container border">
+        <div class="row  m-6 fs-0 p-4">
+          <div class="col-12 col-sm-4">
+            <div class="text-left mb-5">
+              <p>
+                I'm passinate about capturing the best moments of someone's life on camera.
+              </p>
+            </div>  
+          </div>
+          <div class="col-12 col-sm-4 d-flex justify-content-center fs-0" id="ashish-intro-middle">
+            <div class="vertical-line" id="vertical-line"></div>
+            <div class="card" style="width: 60%; padding: px; margin-top: 20px; margin-bottom: 20px;">
+                <img src="img/ashish6v2.jpg" style="border-radius: 10px;" alt="img" width="100%">
+                <p>
+                  <b class="text-left">Hi Everyone!</b>
+                  My name is Ashish Tamang
+                  <br>
+                  I am a professional photographer, photo editor, & video editor 
+                  <br>
+                  I provide all services related to it.
+                </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 text-right mt-5">
             <p>
-              <b class="text-left">Hi Everyone!</b>
-              My name is Ashish Tamang
+              Based in The Assam Kaziranga University
               <br>
-              I am a professional photographer, photo editor, & video editor 
+              Jorhat, Assam, India
               <br>
-              I provide all services related to it.
             </p>
+          </div>
         </div>
-      </div>
-      <div class="col text-right">
-        <p>
-          Based in The Assam Kaziranga University
-          <br>
-          Jorhat, Assam, India
-          <br>
-        </p>
       </div>
     </div>
     <section id="about" class="p-5">
       <div class="container">
-        <div class="col">
-          <p class="text-bold fs-4">About Me</p>
-        </div>
-        <div class="col fs-2">
-          <p class="text-bold">
-            Currently I am shooting professional photographs and editing videos/photos. 
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="text-bold fs-4">About Me</p>
+          </div>
+          <div class="col-12 col-md-6 fs-2">
+            <p class="text-bold">
+              Currently I am shooting professional photographs and editing videos/photos. 
+              <br>
+              I also design and develop websites (including Web Applications), and all types of cards.
+            </p>
+            <p class="fs-1">
+              I believe that the pictures are the best way to capture the beauty of this world so, I always take notice of every single beauty while taking a photograph.
+            </p>
             <br>
-            I also design and develop websites (including Web Applications), and all types of cards.
-          </p>
-          <p class="fs-1">
-            I believe that the pictures are the best way to capture the beauty of this world so, I always take notice of every single beauty while taking a photograph.
-          </p>
-          <br>
-          <a href="about.html">
-            <button class="btn-1 fs-1">Read more</button>
-          </a>
+            <a href="about.html">
+              <button class="btn-1 fs-1">Read more</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -105,107 +115,109 @@
       </a>
     </section>
     <section id="services" class="p-5">
-      <p class="fs-4 text-bold">
-        Services
-      </p>
-      <div class="border-large m-6 services p-0" style="display: block;">
-        <div class="container" style="margin-bottom: 5px;">
-          <div class="col-3">
-            <div class="card-inverse p-6 h-100" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Photography
-              </p>
-              <p class="fs-0 py-2">
-                Capturing Moments, Creating Memories: Professional photography services tailored to your unique moments. From portraits to events, let me freeze time for you.
-                <br>
-                <br>
-                <span class="text-bold">From ₹200</span>
+      <div class="" style="display: block;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-1">
+              <p class="fs-4 text-bold">
+                Services
               </p>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card border-dotted h-100 p-6 mx-1 text-center">
-              <div class="d-flex align-items-center justify-content-center h-75">
-                <p class="text-bold" style="font-size: 50px;">
-                  <span><i class="fa-solid fa-star-of-life" ></i></span>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse p-5 h-100" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Photography
+                </p>
+                <p class="fs-0 py-2">
+                  Capturing Moments, Creating Memories: Professional photography services tailored to your unique moments. From portraits to events, let me freeze time for you.
+                  <br>
+                  <br>
+                  <span class="text-bold">From ₹200</span>
                 </p>
               </div>
-              <p class="fs-0 p-0">
-                All projects are made with love.
-              </p>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card-inverse p-6 h-100 mx-1" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Photo Editing
-              </p>
-              <p class="fs-0 py-2">
-                Polished Perfection: Elevate your photos with meticulous editing. Whether it's retouching portraits or enhancing landscapes, I bring out the best in every pixel.
-                <br>
-                <br>
-                <span class="text-bold">From ₹150</span>
-              </p>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card-inverse p-6 h-100" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Video Editing
-              </p>
-              <p class="fs-0 py-2">
-                Visual Storytelling Mastery: Transform raw footage into captivating narratives. Seamless edits that bring your stories to life—because every moment deserves its own cinematic touch.
-                <br>
-                <br>
-                <span class="text-bold">From ₹500</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container" style="margin-bottom: 5px;">
-          <div class="col-3">
-            <div class="card-inverse p-6 h-100" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Card Design (Farewell/Invitation):
-              </p>
-              <p class="fs-0 py-2">
-                Crafting Moments on Paper: Personalized and heartfelt farewell and invitation cards. Each design is a piece of art, reflecting the significance of your special occasions.
-                <br>
-                <br>
-                <span class="text-bold">From ₹150</span>
-              </p>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card-inverse p-6 h-100 mx-1" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Poster Design
-              </p>
-              <p class="fs-0 py-2">
-                Poster Perfection: Transform your ideas into eye-catching posters. From events to promotions, I design visuals that demand attention and leave a lasting impression.
-                <br>
-                <br>
-                <span class="text-bold">From ₹150</span>
-              </p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card bg-moonshine h-100 p-6 text-center" style="box-sizing: border-box">
-              <div class="d-flex align-items-center justify-content-center h-50">
-                <p class="text-bold" style="font-size: 50px;">
-                  <span><i class="fa-solid fa-star-of-life" ></i></span><span><i class="fa-solid fa-star-of-life" ></i></span>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card border-dotted h-100 p-5 mx-1 text-center">
+                <div class="d-flex align-items-center justify-content-center h-75">
+                  <p class="text-bold" style="font-size: 50px;">
+                    <span><i class="fa-solid fa-star-of-life" ></i></span>
+                  </p>
+                </div>
+                <p class="fs-0 p-0">
+                  All projects are made with love.
                 </p>
               </div>
-              <p class="fs-0 p-0">
-                The exact cost of the work is fixed strictly after the provision and approval of the TOR. All additional works are estimated according to the hourly cost. The work is divided into stages, each of which is prepaid in full. The result is provided just in time, in full according to the TOR.
-              </p>
             </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse p-5 h-100 mx-1" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Photo Editing
+                </p>
+                <p class="fs-0 py-2">
+                  Polished Perfection: Elevate your photos with meticulous editing. Whether it's retouching portraits or enhancing landscapes, I bring out the best in every pixel.
+                  <br>
+                  <br>
+                  <span class="text-bold">From ₹150</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse p-5 h-100" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Video Editing
+                </p>
+                <p class="fs-0 py-2">
+                  Visual Storytelling Mastery: Transform raw footage into captivating narratives. Seamless edits that bring your stories to life—because every moment deserves its own cinematic touch.
+                  <br>
+                  <br>
+                  <span class="text-bold">From ₹500</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse p-5 h-100" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Card Design (Farewell/Invitation):
+                </p>
+                <p class="fs-0 py-2">
+                  Crafting Moments on Paper: Personalized and heartfelt farewell and invitation cards. Each design is a piece of art, reflecting the significance of your special occasions.
+                  <br>
+                  <br>
+                  <span class="text-bold">From ₹150</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse p-5 h-100 mx-1" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Poster Design
+                </p>
+                <p class="fs-0 py-2">
+                  Poster Perfection: Transform your ideas into eye-catching posters. From events to promotions, I design visuals that demand attention and leave a lasting impression.
+                  <br>
+                  <br>
+                  <span class="text-bold">From ₹150</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card bg-moonshine h-100 p-5 text-center" style="box-sizing: border-box">
+                <div class="d-flex align-items-center justify-content-center h-50">
+                  <p class="text-bold" style="font-size: 50px;">
+                    <span><i class="fa-solid fa-star-of-life" ></i></span><span><i class="fa-solid fa-star-of-life" ></i></span>
+                  </p>
+                </div>
+                <p class="fs-0 p-0">
+                  The exact cost of the work is fixed strictly after the provision and approval of the TOR. All additional works are estimated according to the hourly cost. The work is divided into stages, each of which is prepaid in full. The result is provided just in time, in full according to the TOR.
+                </p>
+              </div>
+          </div>
         </div>
-      </div>
+          </div>
     </section>
     <section id="contact">
       <div style="overflow:hidden;">
-        <div style="width: 120%; transform:translateX(-100px)">
+        <div style="width: 1920px; transform:translateX(-100px);">
           <span class="gradient-text">PHOTOGRAPHY</span>
           <span class="gradient-text">PHOTOGRAPHY</span>
           <span class="gradient-text">PHOTOGRAPHY</span>
@@ -223,6 +235,7 @@
           <span class="gradient-text">SAGAR</span>
           <span class="gradient-text">ASHISH</span>
           <span class="gradient-text">SAGAR</span>
+          <span class="gradient-text">ASHISH</span>
           
           <span class="gradient-text">TAMANG</span>
           <span class="gradient-text">TAMANG</span>
@@ -234,6 +247,7 @@
           <span class="gradient-text">TAMANG</span>
           <span class="gradient-text">TAMANG</span>
           
+          <span class="gradient-text">DESIGN</span>
           <span class="gradient-text">DESIGN</span>
           <span class="gradient-text">DESIGN</span>
           <span class="gradient-text">DESIGN</span>
@@ -245,6 +259,7 @@
           <span class="gradient-text">DESIGN</span>
           <span class="gradient-text">DESIGN</span>
 
+          <span class="gradient-text">START UP</span>
           <span class="gradient-text">START UP</span>
           <span class="gradient-text">START UP</span>
           <span class="gradient-text">START UP</span>
@@ -255,48 +270,52 @@
           <span class="gradient-text">START UP</span>
         </div>
       </div>
-      <div class="container p-5">
-        <div class="col h-100" style="overflow: hidden; box-sizing:border-box">
-          <div class="card-inverse m-2 text-center p-5">
-            <span class="full-width-text-subhead-contacts">CONTACTS</span>
-            <br>
-            <img src="img/ashish7v2.jpg" style="border-radius: 10px;" alt="img" width="95%">
-          </div>
-        </div>
-        <div class="col h-100" style="overflow: hidden; box-sizing:border-box;">
-          <div class="card-inverse m-2 p-5 h-100">
-            <span class="fs-3 text-left text-bold">I promise to give my 100% in all the projects I undertake.</span>
-            <br>
-            <form action="">
-              <label for="name">
-                Name:
-                <input type="text" id="name" name="name">
-              </label>
-              <br>
-              <label for="email">
-                Email:
-                <input type="email" id="email" name="email">
-              </label>
-              <br>
-              <label for="phone">
-                Phone:
-                <input type="tel" id="phone" name="phone">
-              </label>
-              <br>
-              <label for="message">
-                Message:
-                <textarea id="message" name="message"></textarea>
-              </label>
-              <br>
-              <label for="terms">
-                <input type="checkbox" id="terms">
-                I have been informed and agree to the Privacy Policy.
-              </label>
-              <button class="btn-2" type="submit">Send</button>
-            </form>
-
-            <br>
-            <span style="font-size: 30px;"><i class="fa-solid fa-star-of-life" ></i></span>All projects are made with love.
+      <div class="p-3">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6" style="overflow: hidden; box-sizing:border-box">
+              <div class="card-inverse m-2 text-center p-5">
+                <span class="full-width-text-subhead-contacts text-center">CONTACTS</span>
+                <br>
+                <img src="img/ashish7v2.jpg" style="border-radius: 10px;" alt="img" width="95%">
+              </div>
+            </div>
+            <div class="col-12 col-md-6" style="overflow: hidden; box-sizing:border-box;">
+              <div class="card-inverse m-2 p-5 h-100">
+                <span class="fs-3 text-left text-bold">I promise to give my 100% in all the projects I undertake.</span>
+                <br>
+                <form action="">
+                  <label for="name">
+                    Name:
+                    <input type="text" id="name" name="name">
+                  </label>
+                  <br>
+                  <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email">
+                  </label>
+                  <br>
+                  <label for="phone">
+                    Phone:
+                    <input type="tel" id="phone" name="phone">
+                  </label>
+                  <br>
+                  <label for="message">
+                    Message:
+                    <textarea id="message" name="message"></textarea>
+                  </label>
+                  <br>
+                  <label for="terms">
+                    <input type="checkbox" id="terms">
+                    I have been informed and agree to the Privacy Policy.
+                  </label>
+                  <button class="btn-2" type="submit">Send</button>
+                </form>
+    
+                <br>
+                <span style="font-size: 30px;"><i class="fa-solid fa-star-of-life" ></i></span>All projects are made with love.
+              </div>
+            </div>
           </div>
         </div>
       </div>
