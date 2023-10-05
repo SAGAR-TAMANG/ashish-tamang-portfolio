@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton&family=Poppins:ital,wght@0,400;1,300&display=swap');
 
-*{
+*, *::before, *::after {
   margin: 0px;
-  padding: 2px;
+  padding: 0px;
   /* font-family: 'Neuton', serif; */
   font-family: 'Poppins', sans-serif;
 }
@@ -124,7 +124,7 @@ ul{
   }
 }
 
- > .container {
+ nav> .container {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -449,28 +449,58 @@ a button{
   }
 }
 
-ul a{
+nav ul a{
   text-decoration: none;
   color: var(--text);
   padding: 0;
+  
+  /* animation begins */
+
+  display: inline-block;
+  padding-bottom: 0.25rem; /* defines the space between text and underline */
+  position: relative;  
 }
 
-ul a:hover{
-  text-decoration: none;
-  color: var(--text);
-  padding: 0;
+nav ul a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--text);
+  transition: width 0.35s ease-out;
+}
+
+nav ul a:hover::before {
+  width: 100%;
 }
 
 ul a.inverse{
   text-decoration: none;
   color: var(--bg);
   padding: 0;
+  
+  /* animation begins */
+
+  display: inline-block;
+  padding-bottom: 0.25rem; /* defines the space between text and underline */
+  position: relative; 
 }
 
-ul a:hover{
-  text-decoration: none;
-  color: var(--bg);
-  padding: 0;
+ul a.inverse::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--bg);
+  transition: width 0.40s ease-out;
+}
+
+ul a.inverse:hover::before {
+  width: 100%;
 }
 
 /* The switch - the box around the slider */
@@ -504,10 +534,10 @@ ul a:hover{
 .slider:before {
   position: absolute;
   content: "";
-  height: 15px;
-  width: 15px;
-  left: 2px;
-  bottom: 2px;
+  height: 13px;
+  width: 13px;
+  left: 1px;
+  bottom: 1px;
   background-color: var(--bg);
   -webkit-transition: .4s;
   transition: .4s;
@@ -518,9 +548,9 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(19px);
-  -ms-transform: translateX(19px);
-  transform: translateX(19px);
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
   background-color: var(--bg);
 }
 
@@ -738,6 +768,31 @@ input, textarea {
   position: sticky !important;
 }
 
+.divider {
+  display: block;
+  height: 0px;
+  background-color: var(--bg);
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.footer-anchor {
+  background-color: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.footer-anchor:hover {
+  background-color: var(--text);
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.card-service-hover:hover {
+  background: linear-gradient(90deg, rgba(255,0,99,1) 0%, rgba(255,0,112,1) 17%, rgba(50,219,255,1) 100%);
+  transform: scale(1.01);
+  transition: 100ms ease-in-out;
+}
 
 .w-25 {
   width: 25% !important;
@@ -2565,6 +2620,7 @@ input, textarea {
     text-align: center !important;
   }
 }
+
 @media (min-width: 992px) {
   .float-lg-start {
     float: left !important;
@@ -3125,30 +3181,4 @@ input, textarea {
   .text-lg-center {
     text-align: center !important;
   }
-}
-
-.divider {
-  display: block;
-  height: 0px;
-  background-color: var(--bg);
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
-.footer-anchor {
-  background-color: var(--text);
-  color: var(--bg);
-  text-decoration: none;
-}
-
-.footer-anchor:hover {
-  background-color: var(--text);
-  color: var(--orange);
-  text-decoration: none;
-}
-
-.card-service-hover:hover {
-  background: linear-gradient(90deg, rgba(255,0,99,1) 0%, rgba(255,0,112,1) 17%, rgba(50,219,255,1) 100%);
-  transform: scale(1.01);
-  transition: 100ms ease-in-out;
 }
