@@ -10,32 +10,40 @@
 <body class="light">
   <header id="home">
     <div class="container">
-      <div class="col-6">
+      <div class="row">
+        <div class="col-6">
           TAMANG GROUP
-      </div>
-      <div class="col-4">
-        <div class="p-0">
-          <span class="menu-toggle fs-1" onclick="toggleMenu()">☰</span></div>
-        <nav id="nav">
-          <ul type="circle">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col text-right">
-        <label class="switch" onclick="toggleTheme()">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
+        </div>
+        <div class="col-6">
+          <div class="p-0">
+            <span class="menu-toggle fs-1 text-right" onclick="toggleMenu()">☰</span>
+          </div>
+          <div class="d-flex justify-content-right">
+            <nav id="nav">
+              <ul type="circle">
+                <li class="me-3 me-lg-5 underline-hover-effect"><a href="index.html">Home</a></li>
+                <li class="me-3 me-lg-5"><a href="project.html">Projects</a></li>
+                <li class="me-3 me-lg-5"><a href="#about">About</a></li>
+                <li class="me-3 me-lg-5"><a href="contact.html">Contact</a></li>
+                <li class="me-3 me-lg-5 py-1" type="none">
+                  <div class="d-flex justify-content-right">
+                    <label class="switch" onclick="toggleTheme()">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
     <div class="big-header">
       <p class="full-width-text-about">ABOUT ME</p>
     </div>
   </header>
+
   <main>
     <section id="about" class="p-5">
       <div class="container">

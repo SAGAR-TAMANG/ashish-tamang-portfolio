@@ -61,14 +61,21 @@ body {
 .full-width-text-projects{
   width: 100%;
   text-align: center;
-  font-size: 19.8vw;
+  font-size: 18.6vw;
   margin: 0px;
 }
 
 .full-width-text-about{
   width: 100%;
   text-align: center;
-  font-size: 19.5vw;
+  font-size: 18vw;
+  margin: 0px;
+}
+
+.full-width-text-contact{
+  width: 100%;
+  text-align: center;
+  font-size: 18.4vw;
   margin: 0px;
 }
 
@@ -679,18 +686,38 @@ div {
   background-color: var(--text);
   color: var(--bg);
   width: 100%;
-  border: 0px;
+  border: 2px solid;
   border-radius: 30px;
   padding: 10px 0 10px 0;
+}
+.btn-1:hover {
+  background-color: var(--bg);
+  color: var(--text);
+  width: 100%;
+  border: 2px solid;
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
+  transition: 0.25s ease-out;
 }
 
 .btn-2 {
   background-color: var(--bg);
   color: var(--text);
   width: 100%;
-  border: 0px;
+  border: 2px solid;
   border-radius: 30px;
   padding: 10px 0 10px 0;
+  cursor: pointer;
+}
+
+.btn-2:hover {
+  background-color: var(--text);
+  color: var(--bg);
+  width: 100%;
+  border: 2px solid;
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
+  transition: 0.25s ease-out;
 }
 
 .card-services {
@@ -789,8 +816,7 @@ input, textarea {
 }
 
 .card-service-hover:hover {
-  background: linear-gradient(90deg, rgba(255,0,99,1) 0%, rgba(255,0,112,1) 17%, rgba(50,219,255,1) 100%);
-  transform: scale(1.01);
+  
   transition: 100ms ease-in-out;
 }
 
