@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton&family=Poppins:ital,wght@0,400;1,300&display=swap');
 
-*, *::before, *::after {
+*{
   margin: 0px;
   padding: 0px;
   /* font-family: 'Neuton', serif; */

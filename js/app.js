@@ -1,3 +1,22 @@
+function submitForm(event) {
+  event.preventDefault(); // Prevent the default form submission
+  
+  // Get form input values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+  const termsChecked = document.getElementById('terms').checked;
+
+  // Validate or process the input as needed
+  // For now, let's just log the values to the console
+  console.log('Name:', name);
+  console.log('Email:', email);
+  console.log('Phone:', phone);
+  console.log('Message:', message);
+  console.log('Terms Checked:', termsChecked);
+}
+
 function toggleMenu(){
   var nav = document.getElementById("nav");
   if (nav.style.display === "block") {
@@ -58,6 +77,7 @@ if (currentFileName === "index.html") {
       });
     });
   });
+
 } else {
   
 }
