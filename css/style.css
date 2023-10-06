@@ -815,9 +815,38 @@ input, textarea {
   text-decoration: none;
 }
 
-.card-service-hover:hover {
-  
-  transition: 100ms ease-in-out;
+.card-services-inverse {
+  color: var(--bg);
+  text-decoration: none;
+
+  display: inline-block;
+  padding-bottom: 0.25rem; /* defines the space between text and underline */
+  position: relative;  
+}
+
+.card-services-inverse::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--bg);
+  transition: width 0.35s ease-out;
+}
+
+.card-services-inverse:hover::before {
+  width: 100%;
+}
+
+.card-service-hover .fa-arrow-right{
+  transition: 100ms ease-in;
+}
+
+.card-service-hover:hover .fa-arrow-right{
+  color: var(--moonstone);
+  transform: translateX(20px);
+  transition: 200ms ease-out;
 }
 
 .w-25 {
