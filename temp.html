@@ -4,54 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partial Border on Left Side</title>
-  <style>
-    .partial-border-left {
-      position: relative;
-    }
-
-    .partial-border-left::before {
-      content: "";
-      position: absolute;
-      height: 50%;
-      border-left: 2px solid #333; /* Example color for the partial border */
-      box-sizing: border-box;
-    }
-
-    
-    nav ul a{
-      text-decoration: none;
-      color: var(--text);
-      padding: 0;
-      
-      /* animation begins */
-    
-      display: inline-block;
-      padding-bottom: 0.25rem; /* defines the space between text and underline */
-      position: relative;  
-    }
-    
-    nav ul a::before{
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 3px;
-      background-color: var(--text);
-      transition: width 0.35s ease-out;
-    }
-    
-    nav ul a:hover::before {
-      width: 100%;
-    }
-    
   </style>
 </head>
 <body>
-
-  <div class="partial-border-left">
-    <p>This div has a partial border on the left side.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <video src="projects/video/insta-reel1.mp4" autoplay muted width="20%">...video</video>
+      </div>
+    </div>
   </div>
-
 </body>
 </html>

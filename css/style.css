@@ -20,6 +20,8 @@
   --eerie-black: #1B1B1E;
   --maroon: #8e182c;
   --orange: #ffbe00;
+  --navbar-light: rgba( 255, 255, 255, 0.7);
+  --navbar-dark: rgba(0, 0, 0, 0.7);
 }
 
 .light {
@@ -27,6 +29,7 @@
   --text: var(--charcoal);
   --nav-text: var(--moonstone);
   --border-color: var(--moonstone);
+  --navbar-color: var(--navbar-light);
 }
 
 .dark {
@@ -34,6 +37,7 @@
   --text: var(--platinum);
   --nav-text: var(--moonstone);
   --border-color: var(--moonstone);
+  --navbar-color: var(--navbar-dark);
 }
 
 body {
@@ -89,6 +93,11 @@ body {
 ul{
   display: flex;
   padding: 0px;
+}
+
+.box {
+  background-color: var(--bg);
+  height: 80vh;
 }
 
 .container,
@@ -398,7 +407,7 @@ ul{
   display: none;
   cursor: pointer;
 
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 100%;
   border: none;
   width: auto;
@@ -467,7 +476,8 @@ nav ul a {
 
   li {
       margin-right: 0;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      font-size: 20px;
   }
 
   .menu-toggle {
@@ -489,13 +499,17 @@ nav ul a {
     transition: 0.5s;
 
     /* Glassmorphism */
-    background: rgba( 255, 255, 255, 0.3 );
+    background: var(--navbar-color);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }  
+  }
+
+  .box {
+    height: 100%;
+  }
 }
 
 nav ul a::before{
@@ -3431,4 +3445,11 @@ input, textarea {
   width:250px;
   transform: translateY(6%);
   transition: 400ms;
+}
+
+
+video {
+  width: 100%;
+  /* height: 100%; Ensures video maintains its aspect ratio */
+  display: block; /* Removes default spacing around the video */
 }
