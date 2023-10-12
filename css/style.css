@@ -53,6 +53,7 @@ body {
 
 .big-header{
   width: 100%;
+  padding-top: 1  vw;
 }
 
 .full-width-text{
@@ -88,6 +89,27 @@ body {
   font-size: 6.5vw;
   margin: 0px;
   overflow: hidden;
+}
+
+.full-width-text-people{
+  width: 100%;
+  text-align: center;
+  font-size: 16vw;
+  margin: 0px;
+  background: none;
+  color: white;
+}
+
+.big-header-img-people{
+  background-image: url('../img/creative-people-sitting-table-boardroom.jpg'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 75vh;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 ul{
@@ -648,6 +670,10 @@ nav ul a {
   .box {
     height: 100%;
   }
+
+  .big-header {
+    padding-top: 10vw;
+  }
 }
 
 nav ul a::before{
@@ -904,6 +930,10 @@ div {
   transition: 0.25s ease-out;
 }
 
+.text-inverse {
+  color: var(--text);
+}
+
 .card-services {
   border-radius: 100px;
 }
@@ -1000,8 +1030,8 @@ input, textarea {
 }
 
 .card-service-hover {
-  color: var(--bg);
-  text-decoration: none;
+  /* color: var(--bg);
+  text-decoration: none; */
   cursor: pointer;
 
   /* Animation Begins */
@@ -1034,6 +1064,26 @@ input, textarea {
   color: var(--moonstone);
   transform: translateX(30px);
   transition: 200ms ease-out;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 .w-25 {
@@ -3600,3 +3650,6 @@ main .border img:hover {
   transition: 200ms;
 }
 
+.text-white {
+  color: white;
+}

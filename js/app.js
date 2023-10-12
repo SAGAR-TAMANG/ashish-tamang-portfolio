@@ -81,7 +81,7 @@ verticalLine.style.height = (ashishIntroMiddle.offsetHeight + 40) + 'px';
 
 // Smooth Scrolling
 
-nav_btn = document.querySelectorAll('ul a')
+nav_btn = document.querySelectorAll('#nav ul a')
 
 // btn1.addEventListener('click', function (e) {
 //   e.preventDefault();
@@ -107,4 +107,18 @@ if (currentFileName === "index.html") {
 
 } else {
   
+};
+
+// POP UP BEGINS
+
+function showPopupPeople1() {
+  document.getElementById('popup-people-1').style.display = 'block';
 }
+
+function closePopupPeople1() {
+  document.getElementById('popup-people-1').style.display = 'none';
+}
+
+document.getElementById('popup-link-people-1').addEventListener('click', function(event) { 
+  console.log("CLICKED");
+});
