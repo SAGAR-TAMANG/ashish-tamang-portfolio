@@ -231,3 +231,21 @@ if (currentFileName === "project.html") {
   wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
   wrapper.addEventListener("mouseleave", autoPlay);
 };
+
+document.getElementById('myFormContact').addEventListener('submit', function(event) {
+  if (!isFormValid()) {
+    event.preventDefault(); // Prevent the form submission if fields are not filled
+    alert('Please fill in all fields before submitting.');
+  }
+});
+
+function isFormValid() {
+  // Check if all required fields are filled
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var message = document.getElementById('message').value;
+  var terms = document.getElementById('terms').checked;
+
+  return name && email && phone && message && terms;
+}

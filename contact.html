@@ -14,7 +14,7 @@
     <div class="bg-present py-2 position-fixed" style="width: 100%; z-index:1000;">
       <div class="row px-3">
         <div class="col-6">
-          TAMANG GROUP
+          ASHISH TAMANG
         </div>
         <div class="col-6">
           <div class="d-flex justify-content-right">
@@ -23,8 +23,8 @@
           <div class="d-flex justify-content-right">
             <nav id="nav" class="navbar">
               <ul type="circle">
-                <li class="me-3 me-lg-5"><a href="./index.html">Home</a></li>
-                <li class="me-3 me-lg-5"><a href="./">About</a></li>
+                <li class="me-3 me-lg-5"><a href="#home">Home</a></li>
+                <li class="me-3 me-lg-5"><a href="#about">About</a></li>
                 <li class="me-3 me-lg-5"><a href="#projects">Projects</a></li>
                 <li class="me-3 me-lg-5"><a href="#contact">Contact</a></li>
                 <li class="me-3 me-lg-5 py-1" type="none">
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="big-header">
-      <p class="full-width-text-contact">CONTACT</p>
+      <p class="full-width-text-contact">CONTACTS</p>
     </div>
     <div>
       <img src="" alt="">
@@ -108,7 +108,7 @@
       </div>
       <center>
         <div class="bg-present border-dotted"
-          style="height:280px; width:280px; box-sizing:border-box; border-radius:100%; transform: translateY(-115%);">
+          style="height:280px; width:280px; box-sizing:border-box; border-radius:100%; transform: translateY(-110%);">
           <div class="bg-inverse qr-code">
             <img src="img/linktree-ashish.png" alt="qr..." style="height: 70%; transform: translateY(19%);">
           </div>
@@ -118,17 +118,27 @@
         <div class="p-0 p-lg-5">
           <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-6" style="overflow: hidden; box-sizing:border-box;">
-              <div class="card-inverse m-2 text-center p-5">
+              <div class="card-inverse m-2 text-center p-3 p-md-5">
                 <span class="full-width-text-subhead-contacts text-center">CONTACTS</span>
                 <br>
+                <div class="speech-bubble fs-2">
+                  <p>
+                    Let's have some discussion,
+                    <br>
+                    <a href="https://www.instagram.com/ashishtamang48/" target="_blank">
+                      <span>aashishtamang48 <i class="fa-brands fa-instagram fa-lg"></i></span>
+                    </a>
+                  </p>
+                </div>          
                 <img src="img/ashish7v2.jpg" style="border-radius: 10px;" alt="img" width="95%">
               </div>
             </div>
             <div class="col-12 col-lg-6" style="overflow: hidden; box-sizing:border-box;">
-              <div class="card-inverse m-2 p-5">
+              <div class="card-inverse m-2 p-3 p-md-5">
                 <span class="fs-3 text-left text-bold">I promise to give my 100% in all the projects I undertake.</span>
                 <br>
-                <form>
+                <!-- formspree  -->
+                <form id="myFormContact" action="https://formspree.io/f/xqkvwqbo" method="POST">
                   <label for="name">
                     Name:
                     <input type="text" id="name" name="name">
@@ -149,11 +159,12 @@
                     <textarea id="message" name="message"></textarea>
                   </label>
                   <br>
-                  <label for="terms">
-                    <input type="checkbox" id="terms">
-                    I have been informed and agree to the Privacy Policy.
+                  <label for="terms" class="d-flex align-items-center justify-content-start">
+                    <input type="checkbox" style="margin: 0; padding: 0; width: 5%;" id="terms"> I agree to the Privacy Policy.
                   </label>
-                  <button class="btn-2" type="submit" onclick="submitForm(event)">Send</button>
+                  <br>
+                  <!-- <button class="btn-2" type="submit" onclick="submitForm(event)">Send</button> -->
+                  <button class="btn-2" type="submit">Send</button>
                 </form>
                 <br>
                 <span style="font-size: 30px;"><i class="fa-solid fa-star-of-life"></i></span>All projects are made with
@@ -177,11 +188,10 @@
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </section>  </main>
   <footer class="bg-inverse py-4 m-0">
     <div class="row text--md-start m-5">
-      <div class="col-12 col-lg-6 my-1">
+      <div class="col-12 col-lg-6 my-1 mb-5">
         <p class="fs-5 text-center">TAMANG GROUP</p>
       </div>
       <div class="col-12 col-sm-4 col-lg-2">
@@ -216,7 +226,7 @@
     <!-- <span class="divider mx-5"></div> -->
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 mt-3 text-center">
+        <div class="col-12 col-sm-6 mt-0 text-center">
           <span class="">© 2023 TAMANG GROUP</span> 
         </div>
         <div class="col-12 col-sm-6 my-3 text-center fs-0">
